@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    overflow-x: hidden;
+    font-family: sans-serif;
+    color: #f0f0f0 ;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .navbar {
+    text-transform: uppercase;
+    background-color: #f0f0f0 ;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .navbar-brand img {
+    height: 2rem;
   }
-}
+  
+  .home-inner {
+    background-image: url("../src/components/Images/mountain.jpeg");
+  }
+  
+  .caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+  }
+  
+  .caption h3 {
+    color: #f0f0f0 ;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+  }
+  
+  .btn {
+    border-width: medium;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 0.5rem 1.1rem;
+    font-size: 0.9rem;
+  }
+  
+  h3.heading {
+    text-align: center;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+  }
+  
+  .jumbotron {
+    color: black;
+  }
+  
+  .padding {
+    padding: 2rem 0;
+  }
+  
+  img.portfolio {
+    max-width: 100%;
+  }
+  
+  .container-fluid {
+    color: black;
+  }
+  
+  .no-padding .col-md-6 {
+    padding: 0;
+  }
+  
+  .footer .row {
+    background-color: #f0f0f0 ;
+    padding: 1rem 2rem 3rem;
+    color: black ;
+  }
+  
+  .footer img {
+    height: 2rem;
+  }
+  
+  .landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    background: white;
+    z-index: -1;
+  }
+  .home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .home-inner {
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+  }
+  
+  #homeIcon {
+    color: white;
+  }
+  
+  #contactIcon {
+    color: black;
+  }
+  
